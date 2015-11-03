@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+
+	
+	
+	<package name="platcenter" namespace="/platcenter" extends="default">
+		<action name="platcenter" class="com.share.action.PlatCenterAction">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/platcenter/centerIndex.jsp</result>
+		</action>
+		<action name="platcenter_studentList" class="com.share.action.UserCenterAction" method="studentList">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/platcenter/studentList.jsp</result>
+		</action>
+		<action name="platcenter_searchStudent" class="com.share.action.UserCenterAction" method="searchStudent">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/platcenter/studentList.jsp</result>
+		</action>				
+		<action name="platcenter_subjectList" class="com.share.action.UserCenterAction" method="subjectList">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/platcenter/subjectList.jsp</result>
+		</action>	
+		<action name="platcenter_searchSubject" class="com.share.action.UserCenterAction" method="searchSubject">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/platcenter/subjectList.jsp</result>
+		</action>				
+		<action name="platcenter_*" class="com.share.action.PlatCenterAction" method="{1}">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result name="save_resource" type="chain">platcenter_resourceList</result>
+			<result name="error">/WEB-INF/pages/platcenter/resourceReport.jsp</result>
+			<result name="save">/WEB-INF/pages/platcenter/platInfo.jsp</result>
+			<result name="newslist">/WEB-INF/pages/platcenter/newsoperate.jsp</result>
+			<result name="getnews">/WEB-INF/pages/platcenter/getnews.jsp</result>
+			<result name="editnews">/WEB-INF/pages/platcenter/editnews.jsp</result>
+			<result name="updatenews" type="chain">platcenter_newsoperate</result>
+			<result name="deletenews" type="chain">platcenter_newsoperate</result>
+			<result name="qalist">/WEB-INF/pages/platcenter/qa.jsp</result>
+			<result name="editqa">/WEB-INF/pages/platcenter/editqa.jsp</result>
+			<result name="updateqa" type="chain">platcenter_qa</result>
+			<result name="deleteqa" type="chain">platcenter_qa</result>
+			<result>/WEB-INF/pages/platcenter/{1}.jsp</result>
+			
+			<result name="xueli">/WEB-INF/pages/platcenter/statistics/xueli.jsp</result>
+		</action>
+		<action name="export" class="com.share.action.PlatCenterAction" method="export">
+		</action>		
+		<action name="export_statistics" class="com.share.action.PlatCenterAction" method="exportStatistics">
+		</action>
+		<action name="export_statistics2" class="com.share.action.PlatCenterAction" method="exportStatistics2">
+		</action>		
+	</package>
+</struts>

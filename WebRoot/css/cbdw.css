@@ -1,0 +1,29 @@
+/* CSS Document */
+*{margin:0 auto;}
+body{ font-size:12px; font-family: "΢���ź�" ;  color:#2e74bb; }
+.title{ background-image:url(../img/title.jpg); background-repeat:no-repeat; height:200px; width:1000px;}
+.line_nav{ background-image:url(../img/line-nav.png); background-repeat:no-repeat; height:41px;width:1000px;}
+.line_nav ul{ list-style:none;  padding-top:10px;  text-align:center;  }
+.line_nav ul li {float:left;  font-size:16px; width:100px; font-weight:bold;  }
+.line_nav ul li a{ color:#1d68a3; text-decoration:none;}
+.content{ width:840px;padding-top:20px; height:1330px; }
+.left{ width:560px;; float:left;  margin-right:20px;   }
+.right{ width:240px;; float:left; border-left:dashed 1px #dcdfe0; height:90%; }
+ .question{ background-image:url(../img/logo_1.png); background-repeat:no-repeat;  color:#58b6f6; line-height:22px;}
+.q{border:dashed 1px #a3a4a4; overflow:hidden; height:220px;}
+.q ul{ list-style:none;}
+.p1 { color:#a3a4a4; font-size:16px; line-height:25px; font-weight:bold; text-align:left; padding-left:18px; }
+.footer{clear:both; line-height: 50px; background-image:url(../img/bottom.png); background-repeat:no-repeat; color:#FFFFFF; text-align:center; width:1000px; margin:0 auto; height:50px; }
+.p2{ font-size:16px; color:#8b8b8b; margin-bottom:10px;}
+.p3{ font-size:14px; font-family:"����"; line-height:26px; color:#535454;}
+.menu{width:200px; float:left; position:relative;  }
+.menu ul{ text-align:left;}
+.menu li.level1 a{display:block;line-height:31px;height:31px; font-size:14px;color:#58b6f6 ; text-decoration:none;  }
+.menu li.level1 a.hover{background-position: left -350px;;}
+.menu li.level1 a.cur{background-position:left -100px;}
+.menu li ul{padding-left:10px;overflow:hidden;}
+.menu li ul.level2{width:188px;display:none;}
+.menu li ul.level2 li{height:26px;line-height:26px;}
+.menu li ul.level2 li a{display:block;height:26px;line-height:26px;color:#42556B;border-top:1px #B8C2CB dashed;overflow:hidden;}
+/*�����˵�}̬��ʽ,��JS����*/
+.menu li ul.level2 li a.hove1{background:#F6F6F6 url(../images/t2.gif) no-repeat 30px center;}

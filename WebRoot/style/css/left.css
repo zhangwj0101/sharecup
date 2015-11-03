@@ -1,0 +1,31 @@
+a:link {color: #ccc; TEXT-DECORATION: none;} /* 未访问的链接 */
+a:visited {color: #ccc; TEXT-DECORATION: none;} /* 已访问的链接 */
+a:hover {color: #fff; TEXT-DECORATION: none;} /* 鼠标移动到链接上 */
+a:active {color: #ccc; TEXT-DECORATION: none;} /* 选定的链接 */
+.left{
+	width:22%;
+	float:left;
+	background-image: url(../images/left_h.jpg);
+	background-repeat: repeat-y;
+	font-family: Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	border-left:solid 1px;
+	}
+.foldmenu{width:220px;min-height:1000px;}
+.foldmenu ul{list-style-type:none;height:40px;line-height:40px;overflow:hidden;cursor:pointer;}
+.foldmenu ul.open{height:auto; background-image: url('../images/left_h.jpg');background-repeat: repeat-y;}
+.bt1 {display:block;font-family:"微软雅黑";	font-size:16px;	color:#3372b7;	height:0px;line-height:0px;font-weight: bold;	width:220px;text-align: left;text-indent: 50px; margin-top:-5px;}
+.bt1 A:link { color: #3372b7;TEXT-DECORATION: none;  }
+.bt1 A:visited { color: #3372b7;TEXT-DECORATION: none;  }
+.bt1 A:hover { color: #ff0000; TEXT-DECORATION: none; }
+.bt1 A:current { color: #0000ff; TEXT-DECORATION: none; font-weight: bold;font-size:14px; }
+.foldmenu ul li{width:220px;}
+.foldmenu li a{color:#565656;display:block;text-decoration:none;font-size:14px;height:40px;line-height:40px;text-align: left;text-indent: 80px;font-weight: bold; font-family:"微软雅黑";}
+.foldmenu li a:hover{background-color:#46bd36;color:#333;height:40px;line-height:40px;width:220px;}
+.foldmenu li a.current{	color:#3372b7;	height:40px;	width:220px;	line-height:40px;	background-color:#fff;	border-top-width: 1px;	border-bottom-width: 1px;	border-top-style:solid;	border-bottom-style: solid;	border-top-color: #12487E;	border-bottom-color: #12487E;	background-position: 30px center;}
+.foldmenu li a.visited { color: #000;TEXT-DECORATION: none;  }
+.jg { float:left; height:50px; width:220px; background:#1A72B1; text-align:center; }
+.user_txt {color:#ffffff; font-weight: bold; font-size:18px; font-family:"微软雅黑";}
+.weibo { width:220px; height:144px;}
+.gz { background:#F4F9FD; height:35px; border-right-width: 1px; border-right-style: solid; border-right-color: #13487E; text-align:right; padding-right:10px; padding-top:5px;	}
+.lx {  padding:8px; border-right-width: 1px; border-right-style: solid; border-right-color: #13487E; font-size:12px; font-family:"宋体"; line-height:18px;}

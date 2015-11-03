@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding-right: 0px; 
+	padding-left: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+	padding-top: 0px;
+	font-size:12px;
+}
+body {
+	font-size:12px;
+	margin: 0px;
+	width: auto;
+	font-family:"宋体";
+}
+#main{
+	width:980px;
+	margin: 0px auto;
+	}
+img {
+	border-top-width: 0px; 
+	border-left-width: 0px; 
+	border-bottom-width: 0px; 
+	border-right-width: 0px
+}
+form {
+	padding-right: 0px; 
+	padding-left: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+	padding-top: 0px; 
+	list-style-type: none
+}
+ul {
+	padding-right: 0px; 
+	padding-left: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+	padding-top: 0px; 
+	list-style-type: none
+}
+ol {
+	padding-right: 0px; 
+	padding-left: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+	padding-top: 0px; 
+	list-style-type: none
+} 
+li {
+	padding-right: 0px; 
+	padding-left: 0px; 
+	padding-bottom: 0px; 
+	margin: 0px; 
+	padding-top: 0px; 
+	list-style-type: none
+} 
+a{
+	color:#999;
+	text-decoration:underline;
+	}
+a:hover{
+	color:#333;
+	text-decoration:underline;
+	}
+/*------------------------------------pic-------------------------*/
+#newspic {
+	float:left;
+	width:660px;
+	height:268px;
+	border-bottom: 1px solid #b9d4f6;
+}
+#pic {
+	float:left;
+	width:660px;
+	height:268px;
+}
+#fW_Content {
+	display: inline;
+	float: left;
+	width:660px;
+	height:268px;
+	overflow: hidden;
+	text-align: center;
+}
+#fW_Content div {
+	float:left;
+	width:660px;
+	height:268px;
+	overflow:hidden;
+}
+#fW_Content img {
+	width:660px;
+	height:268px;
+}
+#fW_Content p.img {
+	float:left;
+	width:660px;
+	height:268px;
+	overflow: hidden;
+}
+#fW_Content p.text {
+	float:left;
+	width:660px;
+	margin-top:-40px;
+	background-color:#FFF;
+	height:40px;
+	filter: Alpha(opacity=90);
+	-moz-opacity:.9;
+	opacity:0.9;
+	text-align:left;
+	line-height:40px;
+	text-indent:1.5em;
+	overflow: hidden;
+}
+#fW_Content p.text a {
+	color:#000;
+	text-decoration:none;
+	font-size:14px;
+	font-weight:bold;
+}
+#fW_Content p.text a:hover {
+	text-decoration:underline;
+}
+#fW_Controls {
+	display: inline;
+	float: right;
+	width: auto;
+	height:auto;
+	position:relative;
+	z-index:99;
+	font-family:Arial, Helvetica, sans-serif;
+	margin-top:-31px;
+	margin-right:10px;
+}
+#fW_Controls a {
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+	width:21px;
+	height:21px;
+	color:#666;
+	text-align: center;
+	text-decoration:none;
+	background:url(../images/num2.gif) left top no-repeat;
+	display:inline;
+	line-height:21px;
+	margin:0px 2px;
+}
+#fW_Controls a.activeSlide {
+	font-weight: bold;
+	font-size: 12px;
+	float: left;
+	width:21px;
+	height:21px;
+	color:#036;
+	text-align: center;
+	text-decoration:none;
+	background:url(../images/num1.gif) left top no-repeat;
+	display:inline;
+	line-height:21px;
+}
+#fW_Controls A:hover {
+	font-weight:bold;
+}
+#txtg {
+	float:left;
+	width:660px;
+	height:auto;
+	background:url(../images/tztg.gif) left bottom repeat-x #FFF;
+	position:relative;
+	padding-top: 9px;
+}
+#txtg h2 {
+	float:left;
+	background:url(../images/h2.gif) left top no-repeat;
+	width:129px;
+	height:39px;
+	text-indent:2em;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	line-height:30px;
+	position:absolute;
+	left:-6px;
+	top:10px;
+}
+#txtg p.text_con {
+	float:left;
+	width:600px;
+	line-height:1.8em;
+	padding:0px 35px 15px 35px;
+	font-size:12px;
+}
+#txtg p.text_con a {
+	text-decoration:none;
+	color:#036;
+}
+.more {
+	float:right;
+	margin-right:10px;
+	color:#0066ff;
+	background:url(../images/more.gif) left center no-repeat;
+	padding-left:10px;
+	line-height:40px;
+	font-size: 12px;
+}
+#cont_list {
+	float:left;
+	width:660px;
+	padding-top:20px;
+	background:url(../images/list_bg.jpg) left bottom repeat-x #FFF;
+	padding-bottom:30px;
+}
+.list_con {
+	float:left;
+	width:660px;
+	height:auto;
+}
+#cont_list h2.list_h2 {
+	float:left;
+	width:615px;
+	background:url(../images/h2_list.gif) left center no-repeat;
+	padding-left:15px;
+	line-height: 2;
+}
+#cont_list h2.list_h2 span {
+	float:left;
+	color:#06C;
+	font-size:14px;
+}
+#cont_list h2.list_h2 a {
+	float:right;
+	color:#06C;
+	font-weight:normal;
+	font-size: 12px;
+	margin-right: 300px;
+}
+#cont_list li {
+	float:left;
+	line-height:30px;
+	width:370px;
+	background:url(../images/list_dics.gif) left center no-repeat;
+	padding-left:10px;
+	font-size: 12px;
+	display: inline;
+	padding-right: 6px;
+}
+#cont_list li a {
+	text-decoration:none;
+	color:#666;
+}
+#cont_list li a:hover {
+	text-decoration:underline;
+	color:#333;
+}

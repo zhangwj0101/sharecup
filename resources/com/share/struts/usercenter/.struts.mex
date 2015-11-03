@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="usercenter" location="0,0" size="0,0">
+    <action name="usercenter" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="centerIndex.jsp" />
+      </result>
+    </action>
+    <action name="usercenter_*" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="{1}.jsp" />
+      </result>
+    </action>
+    <action name="resourceStar" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="resourceDetail.jsp" />
+      </result>
+      <result name="error">
+        <resourceEdge source="error" routing="0" target="resourceDetail.jsp" />
+      </result>
+    </action>
+    <action name="index" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="jsonCheck" location="0,0" size="0,0">
+    <action name="regionAjax" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="centerIndex.jsp" path="/WEB-INF/pages/usercenter/centerIndex.jsp" location="0,0" size="0,0" />
+  <webResource name="{1}.jsp" path="/WEB-INF/pages/usercenter/{1}.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/WEB-INF/pages/index.jsp" location="0,0" size="0,0" />
+  <webResource name="resourceDetail.jsp" path="/WEB-INF/pages/usercenter/resourceDetail.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

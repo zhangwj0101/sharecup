@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+	<!-- RollingFileAppender按log文件最大长度限度生成新文件 -->
+	<appender name="log" class="org.apache.log4j.RollingFileAppender">
+		<!-- 日志文件目录 -->
+		<param name="File" value="info.log"/>
+		<param name="maxFileSize" value="10240KB"/>
+		<param name="maxBackupIndex" value="50"/>
+		<!-- 布局配置 -->	
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{yyyy/MM/dd HH:mm:ss.sss} [%-5p]  - %m%n"/>
+		</layout>
+		<!-- 输出级别配置 -->
+		<filter class="org.apache.log4j.varia.LevelRangeFilter">
+            		<param name="LevelMax" value="INFO" />
+            		<param name="LevelMin" value="DEBUG" />
+        </filter>
+	</appender>
+	
+<!-- 控制具体包下的日志输出 -->	
+	<logger name="com.share">
+		<level value="ALL"/>
+		<appender-ref ref="log"/>
+	</logger>
+<!-- hibernate的执行sql语句 --><!--
+	<logger name="org.hibernate.SQL">
+		<level value="DEBUG"/>
+		<appender-ref ref="log"/>
+	</logger>	
+-->
+</log4j:configuration>

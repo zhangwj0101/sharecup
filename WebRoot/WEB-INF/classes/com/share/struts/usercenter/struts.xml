@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+		<package name="userother" namespace="/" extends="default">
+			<action name="sendemail" class="com.share.action.UserCenterAction" method="sendemail">
+				<result>/index/pages/sendemail.jsp</result>
+			</action>
+			<action name="forgetpass" class="com.share.action.UserCenterAction" method="forgetpass">
+				<result>/index/pages/forgetpass.jsp</result>
+			</action>
+			<action name="reset" class="com.share.action.UserCenterAction" method="reset">
+				<result>/WEB-INF/pages/usercenter/passreset1.jsp</result>
+			</action>			
+			<action name="passquestion" class="com.share.action.UserCenterAction" method="passquestion">
+				<result>/WEB-INF/pages/usercenter/passreset1.jsp</result>
+			</action>	
+			<action name="passsubmit" class="com.share.action.UserCenterAction" method="passsubmit">
+				<result>/WEB-INF/pages/usercenter/passreset1.jsp</result>
+			</action>						
+		</package>
+	
+	<package name="usercenter" namespace="/usercenter" extends="default">
+		<action name="usercenter" class="com.share.action.UserCenterAction">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/usercenter/centerIndex.jsp</result>
+		</action>
+		<action name="usercenter_*" class="com.share.action.UserCenterAction" method="{1}">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/usercenter/{1}.jsp</result>
+		</action>
+		<action name="resourceStar" class="com.share.action.UserCenterAction" method="resourceStar">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/usercenter/resourceDetail.jsp</result>
+			<result name="error">/WEB-INF/pages/usercenter/resourceDetail.jsp</result>
+		</action>
+		<action name="usercenter_regionInfo1" class="com.share.action.UserCenterAction" method="regionInfo1">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/usercenter/regionInfo.jsp</result>
+		</action>
+		<action name="usercenter_resourceApply" class="com.share.action.UserCenterAction" method="resourceApply">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result>/WEB-INF/pages/usercenter/resourceDownload.jsp</result>
+		</action>							
+		<action name="index" class="com.share.action.UserCenterAction" method="index">
+			<interceptor-ref name="mydefault"></interceptor-ref>
+			<result name="studentCenter">/WEB-INF/pages/index.jsp</result>
+			<result name="platCenter">/WEB-INF/pages/platIndex.jsp</result>
+		</action>
+	</package>
+	<package name="jsonCheck" extends="json-default">   
+		<action name="regionAjax" class="com.share.action.RegionAction" method="regionAjax">
+				<result type="json">   
+                	<param name="root">tip</param>   
+            	</result>   
+		</action>
+		<action name="regionAjaxEmail" class="com.share.action.RegionAction" method="regionAjaxEmail">
+				<result type="json">   
+                	<param name="root">tip</param>   
+            	</result>   
+		</action>
+		<action name="addPlayer" class="com.share.action.RegionAction" method="addPlayer">
+		</action>		
+		<action name="editHeader" class="com.share.action.RegionAction" method="editHeader">
+		</action>			
+		<action name="editPlayer" class="com.share.action.RegionAction" method="editPlayer">
+		</action>	
+		<action name="editTeacher" class="com.share.action.RegionAction" method="editTeacher">
+		</action>	
+		<action name="delPlayer" class="com.share.action.RegionAction" method="delPlayer">
+		</action>							
+	</package>
+</struts>

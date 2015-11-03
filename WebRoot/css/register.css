@@ -1,0 +1,19 @@
+/* CSS Document */
+*{margin:0 auto;}
+body{ font-size:12px; font-family: "Î¢ÈíÑÅºÚ" ;  color:#2e74bb; }
+.title{ background-image:url(../img/title.jpg); background-repeat:no-repeat; height:200px; width:1000px;}
+.line_nav{ background-image:url(../img/line-nav.png); background-repeat:no-repeat; height:41px;width:1000px;}
+.line_nav ul{ list-style:none;  padding-top:10px;  text-align:center;  }
+.line_nav ul li {float:left;  font-size:16px; width:100px; font-weight:bold;  }
+.line_nav ul li a{ color:#1d68a3; text-decoration:none;}
+.content{ width:900px; padding-top:10px; height:700px; }
+.titel_1{ margin-bottom:10px;}
+.form{ float:left; margin-bottom:10px; width:700px;}
+.button{ margin-top:40px;}
+.button ul{ list-style:none; }
+.button ul li{ float: left; padding-left:20px; padding-top:10px;}
+.p_1{ color:#0aa8f2; font-size:18px; font-weight:bold;}
+.p_2{ color:#666767; font-size:16px;}
+.footer{ background-image: url(../img/bottom.png); background-repeat:no-repeat; color:#FFFFFF; text-align:center; width:1000px; margin:0 auto; height:50px; }
+
+

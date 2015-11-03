@@ -1,0 +1,43 @@
+/* CSS Document */
+*{margin:0 auto;}
+body{ font-size:12px; font-family: "΢���ź�" ;color:#2e74bb; }
+.title{ background-image:url(../img/title.jpg); background-repeat:no-repeat; height:200px; width:1000px;}
+.line_nav{ background-image:url(../img/line-nav.png); background-repeat:no-repeat; height:41px;width:1000px;}
+.line_nav ul{ list-style:none;  padding-top:10px;  text-align:center;  }
+.line_nav ul li {float:left;  font-size:16px; width:100px; font-weight:bold;  }
+
+.line_nav ul li a{ color:#1d68a3; text-decoration:none;}
+.content{ width:900px; padding-top:10px; height:845px; }
+.news{ background-image: url(../img/news.png); background-repeat:no-repeat;padding-top:12px; padding-right:35px; padding-left:20px; height:270px;  }
+.img{ float:left; margin-right:25px; width:520px; overflow:hidden;}
+.img ul{ float:left; list-style:none;}
+.news_1{ float:left; border-left: dotted  #e4e4e4 1px; width:280px;   }
+.news_1 ul { list-style:none;text-align:center; }
+.news_1 ul li{ line-height:20px; text-align:left; }
+.news_1 ul li a{ color:#2e74bb; text-decoration:none;}
+.news_1 ul li a:hover{ text-decoration:underline;}
+.h2_1{font-family: "΢���ź�";color:#2e74bb; font-size:16px; line-height:25px; font-weight:bold; }
+.nr_1{ padding-top:10px;}
+.introduct{ background-image:url(../img/js.png); background-repeat:no-repeat; height:141px; 
+float:left; width:540px; padding-top:20px; padding-left:20px; padding-right:20px; text-align:left;}
+.text_1{width:510px; margin-left:0; margin-top:5px; border-top:solid 1px #aaa9a9 }
+.text_1 a{ text-decoration:none; color:#2e74bb; font-size:14px; line-height:23px; text-indent:12px;}
+.text_1 a:hover{ text-decoration:underline;}
+.p1 {font-family: "΢���ź�" ;color:#a3a4a4; font-size:16px; line-height:25px; font-weight:bold; text-align:left; padding-left:18px; }
+.register{ width:310px; margin-left:0px;; margin-right:0px;
+height:141px; float:left; background-image:url(../img/logo_1.png); background-repeat:no-repeat; margin-bottom:4px; border-bottom:groove #CCCCCC 0.8px;   }
+.register ul{ list-style:none; line-height:28px; font-size:14px; }
+.register ul li{ text-align:left;}
+.button{ border:none;}
+.button ul{ margin-left:40px;}
+.button ul li{ float:left; padding-right:20px;}
+.nr_2{ padding-top:15px; }
+.lc{ background-image: url(../img/lc.png); background-repeat:no-repeat; width:540px; padding-left:20px;margin-left:0px; float:left; padding-top:20px; height:367px; padding-right:20px;}
+.question{ background-image:url(../img/logo_1.png); background-repeat:no-repeat; margin-left:0px; float:left; width:310px; color:#58b6f6; line-height:22px;}
+.q{ padding-left:20px; border:dashed 1px #a3a4a4;}
+.lj{ padding-top:15px; margin-left:0px; float:left; width:310px;}
+.footer{clear:both; line-height: 50px; background-image:url(../img/bottom.png); background-repeat:no-repeat; color:#FFFFFF; text-align:center; width:1000px; margin:0 auto; height:50px; }
+
+
+
+
